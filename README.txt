@@ -7,7 +7,7 @@ git config --global user.name "Your Name"
 git init
 git add .
 git commit -m "first commit"
-git remote add origin https://github.com/TylerGlenski/cryptosocket.git
+git remote add origin https://github.com/TylerGlenski/lindsay_app_flutter
 git push -u origin master
 
 
