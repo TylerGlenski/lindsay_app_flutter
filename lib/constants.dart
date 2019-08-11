@@ -23,7 +23,8 @@ const kCardTwoText = 'Shopify';
 const kCardThreeText = 'Gmail Me';
 
 // URL's
-const kEmailURL = "mailto:lglenski@gmail.com?subject=Support&body=Lindsay, ";
+const kEmailURL =
+    "mailto:lglenski@gmail.com?subject=AddMe&body=Hi Lindsay, Please add me to your list to be notified about your next live event! ";
 const kPaparazziURL = "https://paparazziaccessories.com/309168/";
 const kShopifyURL = "http://lindsays-bing.myshopify.com/";
 
