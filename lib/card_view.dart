@@ -47,59 +47,37 @@ class CardView extends StatelessWidget {
 
               //########## Card 1 ##########
               ReuseableCard(
-                  text: kCardOneText,
-                  fontSize: fontSize,
-                  fontFamily: 'SourceSansPro',
-                  color: kCardBackgroundColor),
-//              Card(
-//                color: kCardBackgroundColor,
-//                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-//                child: ListTile(
-//                  leading: kCardIconCart,
-//                  title: Text(
-//                    kCardOneText,
-//                    style: TextStyle(
-//                      color: kCardTextColor,
-//                      fontFamily: 'SourceSansPro',
-//                      fontSize: fontSize,
-//                    ),
-//                  ),
+                text: kCardOneText,
+                fontSize: fontSize,
+                fontFamily: 'SourceSansPro',
+                color: kCardBackgroundColor,
+                textColor: kCardTextColor,
+                url: kPaparazziURL,
+              ),
+              //########## Card 2 ##########
+              ReuseableCard(
+                text: kCardTwoText,
+                fontSize: fontSize,
+                fontFamily: 'SourceSansPro',
+                color: kCardBackgroundColor,
+                textColor: kCardTextColor,
+                url: kShopifyURL,
+              ),
+              //########## Card 3 ##########
+              ReuseableCard(
+                text: kCardThreeText,
+                fontSize: fontSize,
+                fontFamily: 'SourceSansPro',
+                color: kCardBackgroundColor,
+                textColor: kCardTextColor,
+                url: kEmailURL,
+              ),
+//              Center(
+//                child: Text(
+//                  'lglenski@gmail.com',
+//                  style: TextStyle(color: Colors.white),
 //                ),
 //              ),
-
-              //########## Card 2 ##########
-              Card(
-                color: kCardBackgroundColor,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                child: ListTile(
-                  leading: kCardIconCart,
-                  title: Text(
-                    kCardTwoText,
-                    style: TextStyle(
-                      color: kCardTextColor,
-                      fontFamily: 'SourceSansPro',
-                      fontSize: fontSize,
-                    ),
-                  ),
-                ),
-              ),
-
-              //########## Card 3 ##########
-              Card(
-                color: kCardBackgroundColor,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                child: ListTile(
-                  leading: kCardIconEmail,
-                  title: Text(
-                    kCardThreeText,
-                    style: TextStyle(
-                      color: kCardTextColor,
-                      fontFamily: 'SourceSansPro',
-                      fontSize: fontSize,
-                    ),
-                  ),
-                ),
-              ),
             ],
           ),
         ),
