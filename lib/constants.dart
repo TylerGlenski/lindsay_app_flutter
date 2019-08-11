@@ -25,7 +25,7 @@ const kCardThreeText = 'Gmail Me';
 // URL's
 const kEmailURL = "mailto:lglenski@gmail.com?subject=Support&body=Lindsay, ";
 const kPaparazziURL = "https://paparazziaccessories.com/309168/";
-const kShopifyURL = "http://lindsays_bing.myshopify.com/";
+const kShopifyURL = "http://lindsays-bing.myshopify.com/";
 
 const kCardIconCart = Icon(
   FontAwesomeIcons.shoppingCart,
