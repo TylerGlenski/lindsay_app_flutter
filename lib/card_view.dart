@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'reuseable_card.dart';
+import 'contact_info.dart';
 
 class CardView extends StatelessWidget {
   @override
@@ -45,7 +45,7 @@ class CardView extends StatelessWidget {
                 child: Divider(color: Colors.teal[100]),
               ),
 
-              //########## Card 1 ##########
+              //########## Card & Gesture 1 ##########
               ReuseableCard(
                 text: kCardOneText,
                 fontSize: fontSize,
@@ -53,31 +53,27 @@ class CardView extends StatelessWidget {
                 color: kCardBackgroundColor,
                 textColor: kCardTextColor,
                 url: kPaparazziURL,
+                icon: kCardIconCart,
               ),
-              //########## Card 2 ##########
+              //########## Card & Gesture 2 ##########
               ReuseableCard(
-                text: kCardTwoText,
-                fontSize: fontSize,
-                fontFamily: 'SourceSansPro',
-                color: kCardBackgroundColor,
-                textColor: kCardTextColor,
-                url: kShopifyURL,
-              ),
-              //########## Card 3 ##########
+                  text: kCardTwoText,
+                  fontSize: fontSize,
+                  fontFamily: 'SourceSansPro',
+                  color: kCardBackgroundColor,
+                  textColor: kCardTextColor,
+                  url: kShopifyURL,
+                  icon: kCardIconCart),
+              //########## Card & Gesture 3 ##########
               ReuseableCard(
-                text: kCardThreeText,
-                fontSize: fontSize,
-                fontFamily: 'SourceSansPro',
-                color: kCardBackgroundColor,
-                textColor: kCardTextColor,
-                url: kEmailURL,
-              ),
-//              Center(
-//                child: Text(
-//                  'lglenski@gmail.com',
-//                  style: TextStyle(color: Colors.white),
-//                ),
-//              ),
+                  text: kCardThreeText,
+                  fontSize: fontSize,
+                  fontFamily: 'SourceSansPro',
+                  color: kCardBackgroundColor,
+                  textColor: kCardTextColor,
+                  url: kEmailURL,
+                  icon: kCardIconEmail),
+              ContactInfo(),
             ],
           ),
         ),

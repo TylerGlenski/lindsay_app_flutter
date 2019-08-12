@@ -9,7 +9,8 @@ class ReuseableCard extends StatelessWidget {
       this.fontFamily,
       this.color,
       this.textColor,
-      this.url});
+      this.url,
+      this.icon});
 
   final String text;
   final double fontSize;
@@ -17,6 +18,7 @@ class ReuseableCard extends StatelessWidget {
   final Color color;
   final Color textColor;
   final String url;
+  final Icon icon;
 
   _launchURL() async {
     if (await canLaunch(this.url)) {
@@ -34,7 +36,7 @@ class ReuseableCard extends StatelessWidget {
       },
       child: Card(
         child: ListTile(
-          leading: kCardIconCart,
+          leading: icon,
           title: Text(
             text,
             style: TextStyle(
